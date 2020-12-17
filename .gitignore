@@ -3,3 +3,4 @@
 .env.test
 # npm dependency directory
 node_modules
+image/.DS_Store
