@@ -1,0 +1,320 @@
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+
+
+/* header */
+.header{
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  max-height: 600px;
+}
+
+.white-font{
+    /* make a font-border */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* make it pretty */
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    writing-mode: vertical-lr;
+    font-size: 10rem;
+}
+
+.tagline{
+  display: flex;
+
+  /* make it located at right-top */
+  position: absolute;
+  right: 20px;
+  top: 30px;
+
+  /* make it pretty */
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.logo{
+  display: flex;
+  position: absolute;
+  right: 250px;
+  top: 260px;
+}
+
+/* nav */
+.nav
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* make it pretty */
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-bottom: 25px;
+}
+
+.nav
+li{
+  padding-left: 2rem;
+}
+
+.nav
+a{
+  text-decoration:none; 
+  color: black;
+}
+
+.nav
+a:hover{
+  color:white;
+  text-decoration:underline overline; 
+}
+
+.back{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+
+/* about-me */
+.about-me{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.tagline1{
+  /* make a font-border */
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /* make it pretty */
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: white;
+  font-size: 10rem;
+}
+
+.content{
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  /* make it pretty */
+  font-size:1.5rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  gap: 1.5rem;
+  background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+}
+
+.content
+p{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: black;
+  text-align: justify;
+}
+
+/* make first letter bigger */
+.content
+p::first-letter {
+  font-size: 150%;
+  color:pink;
+}
+
+.icons{
+  list-style: none;
+  display: flex;
+  flex-direction: vertical;
+  align-self: center;
+  gap: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* portfolio */
+.sites{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  Text-align:center;
+
+  max-width: 600px;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  /* make it pretty */
+  font-size:1.5rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  gap: 1.5rem;
+  background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+}
+
+.sites
+a{
+  text-decoration:none; 
+  color: grey;
+  font-style: italic;
+}
+
+.sites
+a:hover{
+  color:pink;
+  text-decoration:underline overline; 
+}
+
+.portfolio{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* make it pretty */
+  font-size:1.2rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding-bottom: 1rem;
+}
+
+.portfolio
+li{
+  padding-top: 1rem;
+}
+
+.portfolio
+a{
+  text-decoration:none;
+  color: white;
+}
+
+.portfolio
+a:hover{
+  color:pink;
+  text-decoration:underline overline; 
+}
+
+.portfolio
+li::first-letter {
+  font-size: 150%;
+  color:pink;
+}
+.sites
+p::first-letter {
+  font-size: 150%;
+  color:pink;
+}
+
+/* contact me */
+* {
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size:1.5rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* style inputs */
+input[type=text],input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+  font-size:1rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+input[type=submit] {
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: pink;
+}
+
+.row{
+  width: 50vw;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.instagram{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size:1.5rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.instagram
+p{
+  padding-bottom: 1rem;
+}
+
+.footer{
+  font-size:1rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  /* make it pretty */
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .tagline{
+    color: black;
+  }
+  .white-font{
+    opacity: 0.2;
+  }
+  .logo{
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav
+  ul{
+    font-size: 1rem;
+  }
+  .content{
+    font-size: 1rem;
+  }
+  .tagline1{
+    font-size: 3rem;
+  }
+}
