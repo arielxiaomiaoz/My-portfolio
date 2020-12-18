@@ -3,7 +3,8 @@
 ## Introduction:
 This is my first portfolio website. It is a single page website with a navigation anchored to different location. This website includes 'About me', 'My portfolio' and 'Contact me'. With this website, you can send me email, get to my github, codepen, linkedin and instagram account. 
 ## Website link:
-I upload my website through Heroku, click [here](https://ariel-portfolio-yeah.herokuapp.com/) to take a look.
+I upload my website through Heroku, click [here](https://ariel-portfolio-yeah.herokuapp.com/) to take a look.<br>
+Click here to my [Repo](https://github.com/arielxiaomiaoz/My-portfolio)
 ## Attribution:
 ### 1.[background image](http://color.oulu.me/deta3.html)<br>
 I highly recommanded this website, it has tons of gradient background, all the colors are awesome.<br>
