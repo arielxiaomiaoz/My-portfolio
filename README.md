@@ -11,5 +11,6 @@ I highly recommanded this website, it has tons of gradient background, all the c
 I was planning to use an API to insert instagram app to the website, until I found this one. This website gives me a simple solution that I can insert different apps into the website page esily.<br>
 ### 3.[Flaticon](https://www.flaticon.com/)<br>
 Except my logo, all other icons are from this website.<br>
-### 4. [Patrick Bello](https://github.com/mayorbcode)<br>
-He reviewd my code and helped me fixing my problems with images and server. Thank you Patrick!
+### 4. Thank you
+Tony, my awesome instructor, [Patrick Bello](https://github.com/mayorbcode),
+who reviewd my code and helped me fixing my problems with images and server. All my classmates, I'm so lucky to have you guys!
