@@ -9,6 +9,6 @@ if(isset($_POST['submit'])){
   $txt = "You have reveive an email from ".$name.".\n\n".$message;
 
   mail($mailTo, $txt, $headers);
-  header("Location: index.html?mailsend");
+  header("Location: https://ariel-portfolio-yeah.herokuapp.com/mail.php");
 }
 ?>
