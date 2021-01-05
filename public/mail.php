@@ -1,15 +1,14 @@
 <?php
-if(!empty($_POST["send"])) {
-	$name = $_POST["name"];
-	$email = $_POST["email"];
-	$message = $_POST["message"];
+if(isset($_POST['submit'])){
+  $name = $_POST['name'];
+  $emailFrom = $_POST['email'];
+  $message = $_POST['message'];
 
-	$toEmail = "ariel.mewo@gmail.com";
-	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
-	if(mail($toEmail, $message, $mailHeaders)) {
-	    $message = "Your contact information is received successfully.";
-	    $type = "success";
-	}
+  $mailTo = "ariel.mewo@gmail.com";
+  $headers = "From: ".$emailFrom;
+  $txt = "You have reveive an email from ".$name.".\n\n".$message;
+
+  mail($mailTo, $txt, $headers);
+  header("Location: index.html?mailsend");
 }
-require_once "mail.php";
 ?>
