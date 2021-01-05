@@ -1,14 +1,18 @@
+Thanks for your message!
+
 <?php
-if(isset($_POST['submit'])){
-  $name = $_POST['name'];
-  $emailFrom = $_POST['email'];
-  $message = $_POST['message'];
+	
+	$userName 		= $_POST['name'];
+	$userEmail	 	= $_POST['email'];
+	$userMessage 		= $_POST['message'];
 
-  $mailTo = "ariel.mewo@gmail.com";
-  $headers = "From: ".$emailFrom;
-  $txt = "You have reveive an email from ".$name.".\n\n".$message;
+	$to 			= "ariel.mewo@gmail.com";
+	$subject 		= "Email from my website";
+	$body 			= "Information Submitted:";
 
-  mail($mailTo, $txt, $headers);
-  header("Location: https://ariel-portfolio-yeah.herokuapp.com/mail.php");
-}
+	$body .= "\r\n Name: " . $userName;
+	$body .= "\r\n Email: " . $userEmail;
+	$body .= "\r\n Message: " . $userMessage;
+
+	mail($to, $subject, $body);
 ?>
