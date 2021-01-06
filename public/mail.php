@@ -1,18 +1,27 @@
-Thanks for your message!
+<h3>Thanks for your message!</h3>
 
 <?php
-	
-	$userName 		= $_POST['name'];
-	$userEmail	 	= $_POST['email'];
-	$userMessage 		= $_POST['message'];
+  $message_sent = false;
+  if(isset($_POST['email']) && $_POST['email']!= ''){
+    
+    if(filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
 
-	$to 			= "ariel.mewo@gmail.com";
-	$subject 		= "Email from my website";
-	$body 			= "Information Submitted:";
+      // submit the form
+      $userName 		= $_POST['name'];
+      $userEmail	 	= $_POST['email'];
+      $userMessage 	= $_POST['message'];
 
-	$body .= "\r\n Name: " . $userName;
-	$body .= "\r\n Email: " . $userEmail;
-	$body .= "\r\n Message: " . $userMessage;
+      $to 			= "ariel.mewo@gmail.com";
+      $subject 		= "Email from my website";
+      $body 			= "Information Submitted:";
 
-	mail($to, $subject, $body);
+      $body .= "\r\n Name: " . $userName;
+      $body .= "\r\n Email: " . $userEmail;
+      $body .= "\r\n Message: " . $userMessage;
+
+      mail($to, $subject, $body);
+
+      $message_sent = true;
+    }
+  }
 ?>
